@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --bg-color: #0A0A0A;
+    --subheader-color: #9A9A9A;
+    --text-color: #FAFAFA;
+    --nav-color: #0a0a0a71;
+    --accent-color: #FF4D4D;
+    --accent-hover: #361918; /* darker on hover/navigate */
+    --font-heading: 'Nunito Sans', sans-serif;
+    --font-body: 'Nunito Sans', sans-serif;
+}
+
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+#navbar ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    background-color: var(--nav-color);
+    backdrop-filter: blur(0.5rem);
+    overflow: hidden;
+    padding: 0 15rem;
+    /* border: solid 1px brown; DEBUG*/
+}
+
+#navbar a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 1.5rem 1rem;
+    display: block;
+    text-align: center;
+}
+
+#navbar li {
+    float: right;
+    margin-top: 0.6rem;
+}
+
+#navbar ul #logo {
+    float: left;
+    font-size: 1.5rem;
+    margin-top: 0.4rem;
+}

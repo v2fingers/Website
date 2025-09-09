@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* Base */
+:root {
+    --bg-color: #0A0A0A;
+    --subheader-color: #9A9A9A;
+    --text-color: #FAFAFA;
+    --nav-color: #0a0a0a71;
+    --accent-color: #FF4D4D;
+    --accent-hover: #361918;
+    --font-heading: 'Nunito Sans', sans-serif;
+    --font-body: 'Nunito Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+/* ITEM STYLING */
+/* Texts */
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  color: var(--text-color);
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+span {
+    color: var(--accent-color);
+}
+
+/* Buttons */
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.7rem 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    /* background: var(--accent-color); */
+    border: solid 0.1rem var(--accent-color);
+    border-radius: 999px;
+    margin-right: 0.7rem;
+    margin-left: 0.7rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+#btn-container {
+    flex-direction: column;
+}
+
+/* Skills Lists */
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+#skills li {
+    background: #150D0D;
+    color: var(--text-color);
+    padding: 0.8rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+#skills li:hover {
+    background-color: var(--accent-hover);
+}
+
+/* WEBSITE SECTIONS */
+
+/* Hero Section */
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 105vh;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 8rem;
+    background-image: url(/Images/SL-022122-48700-13.jpg);
+}
+
+
+#hero p {
+    font-size: 1.3rem;
+    padding: 1rem;
+    color: var(--subheader-color);
+}
+
+.scroll-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--subheader-color);
+    padding-top: 7rem;
+    text-decoration: none;
+}
+
+.scroll-icon span {
+    color: var(--subheader-color);
+    padding-bottom: 0.5rem;
+}
+
+.scroll-icon .line {
+    width: 0.05rem;
+    height: 3rem;
+    background-color: var(--subheader-color);
+}
+
+/* About Section */
+#about-sec {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#sub {
+    font-size: 1.5rem;
+    padding-bottom: 8rem;
+    color: var(--subheader-color);
+}
+
+#about-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+#right {
+    background: var(--bg-color);
+    color: var(--text-color);
+    padding: 1.5rem;
+    max-width: 25rem;
+    flex: 1;
+    font-size: 1.3rem;
+}
+
+#left li {
+    font-size: 2erm;
+    padding: 0.2rem 0;
+}
+
+#left h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+#about-list {
+    color: var(--subheader-color);
+    font-size: 1.2rem;
+    padding-left: 2rem;
+}
+
+#divider {
+    width: 0.3rem;
+    background: var(--text-color);
+}
+
+#right p {
+    padding-bottom: 2rem;
+}
+
+/* Projects */
+.projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 50vh;
+    padding: 5rem;
+}
+
+.text-box {
+    background-color: #0A0A0A;
+    padding: 1rem;
+    max-width: 80%;
+    margin-left: 1.7rem;
+    margin-right: 1.7em;
+    text-align: center;
+}
+
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0.5rem 0;
+    margin: 0;
+    justify-content: center;
+}
+
+#skills li {
+    background: #150D0D;
+    color: var(--text-color);
+    padding: 0.8rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.project-img {
+    max-width: 100%;
+    margin: auto;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+#projects-sec #sub {
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.text-box h2 {
+    padding: 1rem;
+}
+
+.text-box p {
+    padding-bottom: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    min-height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 1px #222222;
+    color: var(--subheader-color);
+}
+
+#back-to-top {
+    float: left;
+    position: relative;
+    right: -40rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--subheader-color);
+}

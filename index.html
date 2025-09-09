@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#scroll-to-projects">Projects</a></li>
+            <li><a href="#scroll-to-about">About</a></li>
+            <li id="logo"><a href="#">BS</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" data-stellar-background-ratio="0.5">
+        <p>CREATIVE DEVELOPER</p>
+        <h1>Crafting Digital Experiences<br>Through Code & Design</h1>
+        <p>Designing the future of the web,<br>one innovation at a time.</p>
+        <div id="btn-holder">
+            <a href="#" class="btn">View Work</a>
+            <a href="#" class="btn">Get In Touch</a>
+        </div>
+        <a class="scroll-icon" href="#scroll-to-about">
+            <span>SCROLL</span>
+            <div class="line"></div>
+        </a>
+    </section>
+    <div id="scroll-to-about"></div>
+
+    <!-- About Me Section -->
+     
+     <section id="about-sec">
+
+        <p id="sub">ABOUT ME</p>
+        <div id="about-container">
+            <!-- Left Section -->
+            <div id="left">
+                <h2>Hi, I'm <br><span>Bastian Shelton</span></h2>
+                <ul id="about-list">
+                    <li>Based In Wellington, NZ</li>
+                    <li>14 Years Old</li>
+                    <li>Passionate Developer</li>
+                    <li>2+ Years Coding Experience</li>
+                </ul>
+                <div id="btn-container">
+                    <a href="#" class="btn">Check Projects</a>
+                    <a href="#" class="btn">Get In Touch</a>
+                </div>
+                <h3>My Services:</h3>
+                <ul id="about-list">
+                    <li>Game Design & Scripting</li>
+                    <li>Web Design & Development</li>
+                    <li>General IT Servicing</li>
+                </ul>
+            </div>
+
+            <!-- Vertical Line -->
+            <div id="divider"></div>
+
+            <!-- Right Section -->
+            <div id="right">
+                <p>I’m a passionate developer/designer who loves crafting digital experiences. With a background in web development and game design, I focus on clean, accessible, and visually engaging projects.<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3>My Skills:</h3>
+                <ul id="skills">
+                    <li>UE Blueprints</li>
+                    <li>Sratch</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Game Dev & Design</li>
+                    <li>Web Dev & Design</li>
+                </ul>
+                <div id="scroll-to-projects"></div>
+            </div>
+        </div>
+     </section>
+
+     <!-- Projects Cards -->
+
+
+     <section id="projects-sec">
+        <p id="sub">PROJECTS</p>
+        
+        <div class="projects-container">
+            <div class="text-box">
+                <img class="project-img" src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673.png">
+                <h2 class="sub-heading">Immersive <span>Portfolio</span></h2>
+                <p>This project taught me alot about the workings of websites, HML, anc CSS styling. The product is the webiste that you viewing rght now.</p>
+                <ul id="skills">
+                    <li>HTML</li>
+                    <li>Web Dev & Design</li>
+                    <li>CSS</li>
+                </ul>
+                <div id="btn-container">
+                    <a href="#" class="btn">Learn More →</a>
+                </div>
+            </div>
+
+            <div class="text-box">
+                <img class="project-img" src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673.png">
+                <h2 class="sub-heading">Untitled <span>Game</span></h2>
+                <p>Just over 2 years ago i first opened up the Unreal Editor, since then I have been playing around in it non stop. The product of this was the discoervy of my love for game dev.</p>
+                <ul id="skills">
+                    <li>C++</li>
+                    <li>Game Dev & Design</li>
+                    <li>UE Blueprints</li>
+                </ul>
+                <div id="btn-container">
+                    <a href="#" class="btn">Learn More →</a>
+                </div>
+            </div>
+
+            <div class="text-box">
+                <img class="project-img" src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673.png">
+                <h2 class="sub-heading">Place <span>holder</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.</p>
+                <ul id="skills">
+                    <li>C++</li>
+                    <li>Game Dev & Design</li>
+                    <li>UE Blueprints</li>
+                </ul>
+                <div id="btn-container">
+                    <a href="#" class="btn">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Bastian Shelton | All Rights Reserved.</p>
+        <a href="#" id="back-to-top">Back To Top ^</a>
+    </footer>
+
+    <script src="/jquery-2.0.2.js"></script>
+    <script src="/jquery.stellar.js"></script>
+    <script>
+        $.stellar();
+    </script>
+</body>
+</html>
