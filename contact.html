@@ -11,10 +11,10 @@
     <!-- Navbar -->
     <nav id="navbar">
         <ul>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#scroll-to-projects">Projects</a></li>
-            <li><a href="#scroll-to-about">About</a></li>
-            <li id="logo"><a href="#">BS</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./index.html">Projects</a></li>
+            <li><a href="./index.html">About</a></li>
+            <li id="logo"><a href="./index.html">BS</a></li>
         </ul>
     </nav>
 
@@ -26,34 +26,37 @@
         </div>
 
         <div id="container">
-        <form action="#">
-            <div class="input-box">
-                <div class="input-field field">
-                    <input type="text" placeholder="Name*" id="name" class="item" autocomplete="off">
+            <form action="#">
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" class="item" id="name" placeholder="Name*" autocomplete="off">
+                        <div class="error-text">Name is required</div>
+                    </div>
+                    <div class="input-field field">
+                        <input type="text" class="item" id="email" placeholder="Email*" autocomplete="off">
+                        <div class="error-text">Email is required</div>
+                    </div> 
                 </div>
-                <div class="input-field field">
-                    <input type="text" placeholder="Email*" id="email" class="item" autocomplete="off">
-                </div>
-            </div>
 
-            <div class="input-box">
-                <div class="input-field field">
-                    <input type="text" placeholder="Phone Number*" id="phone" class="item" autocomplete="off">
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" class="item" id="phone" placeholder="Phone*" autocomplete="off">
+                        <div class="error-text">Phone is required</div>
+                    </div>
+                    <div class="input-field field">
+                        <input type="text" class="item" id="subject" placeholder="Subject*" autocomplete="off">
+                        <div class="error-text">Subject is required</div>
+                    </div> 
                 </div>
-                <div class="input-field field">
-                    <input type="text" placeholder="Subject*" id="subject" class="item" autocomplete="off">
-                </div>
-            </div>
 
-            <div class="textarea-field field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="item" autocomplete="off"></textarea>
-            </div>
+                 <div class="textarea-field field">
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Message*" class="item" autocomplete="off"></textarea>
+                    <div class="error-text">Message is required</div>
+                 </div>
 
-            <button type="submit">Send Message →</button>
-        </form>  
+                 <button type="submit">Send Message →</button>
+            </form>
         </div>
-        
-
     </section>
 
     <footer>
@@ -61,5 +64,6 @@
         <a href="#" id="back-to-top">Back To Top ^</a>
     </footer>
 
+    <script src="js/contact.js"></script>
 </body>
 </html>
