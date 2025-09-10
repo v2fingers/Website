@@ -1,0 +1,117 @@
+
+/* Base Code */
+:root {
+    --bg-color: #0A0A0A;
+    --subheader-color: #9A9A9A;
+    --text-color: #FAFAFA;
+    --nav-color: #0a0a0a71;
+    --accent-color: #FF4D4D;
+    --accent-hover: #361918;
+    --font-heading: 'Nunito Sans', sans-serif;
+    --font-body: 'Nunito Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+/* Texts */
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  color: var(--text-color);
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+span {
+    color: var(--accent-color);
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    min-height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 1px #222222;
+    color: var(--subheader-color);
+}
+
+/* Contact Section */
+#contact {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: var(--bg-color);
+}
+
+#contact-head {
+    text-align: center;
+    padding-top: 8rem;
+}
+
+#contact-head p {
+    font-size: 1.3rem;
+    padding: 1rem;
+    color: var(--subheader-color);
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: var(--bg-color);
+    margin: 5rem;
+}
+
+form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.field .item {
+    width: 100%;
+    padding: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--accent-color);
+    outline: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: var(--subheader-color);
+    margin: 0.5rem;
+}
+
+.field .item::placeholder {
+    color: var(--subheader-color);
+}
+
