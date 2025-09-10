@@ -88,7 +88,7 @@ span {
 }
 
 #skills li {
-    background: #150D0D;
+    background-color: var(--accent-hover);
     color: var(--text-color);
     padding: 0.8rem 1rem;
     border-radius: 20px;
@@ -96,22 +96,24 @@ span {
 }
 
 #skills li:hover {
-    background-color: var(--accent-hover);
+    background-color: var(--accent-hover); 
 }
 
 /* WEBSITE SECTIONS */
 
 /* Hero Section */
+
 #hero {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 105vh;
+    min-height: 100vh;
     flex-direction: column;
     text-align: center;
     padding-top: 8rem;
-    background-image: url("../Images/backgroundimg.jpg");
+    background-image: url("./Images/backgroundimg.jpg");
+    background-position: center;
 }
 
 
