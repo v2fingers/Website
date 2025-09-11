@@ -39,6 +39,18 @@ h1, h2, h3 {
     padding-right: 0.8rem;
 }
 
+.fa-brands {
+    color: var(--accent-color);
+    padding-right: 2rem;
+    text-decoration: none;
+}
+
+.social {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+
 h3 {
     font-size: 1.6rem;
     font-weight: 400;
@@ -103,13 +115,8 @@ footer {
 /* Left Side */
 #contact-info {
   flex: 1;
-  border: 1px solid brown;
-  padding: 1rem;
-  padding-bottom: 5rem;
-}
-
-#tagline {
-    padding-top: 1.5rem;
+  /* border: 1px solid brown; */
+  padding: 2rem;
 }
 
 #contact-info h3 {
@@ -117,7 +124,7 @@ footer {
 }
 
 #contact-info p {
-  margin: 0.7rem 0;
+  margin: 1.7rem 0;
   font-size: 1.3rem;
 }
 
