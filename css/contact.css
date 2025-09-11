@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 /* Base Code */
 :root {
@@ -67,11 +68,9 @@ footer {
 #contact {
     flex-direction: column;
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    background: var(--bg-color);
 }
 
 #contact-head {
@@ -92,6 +91,7 @@ footer {
     align-items: center;
     min-height: 70vh;
     background-color: var(--bg-color);
+    /* max-width: 35%; */
 }
 
 #container form {
@@ -110,6 +110,7 @@ form .input-box {
 
 textarea {
     resize: none;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .field .item {
@@ -133,7 +134,7 @@ textarea {
     color: var(--text-color);
     text-align: left;
     margin: -0.3rem 2rem 1rem;
-    /* display: none; */
+    display: none;
 }
 
 form button {
@@ -142,10 +143,17 @@ form button {
     border: none;
     outline: none;
     border-radius: 0.5rem;
-    box-shadow: 0 0 0.62rem var(--accent-color);
+    /* box-shadow: 0 0 0.62rem var(--accent-color); */
+    box-shadow: none;
     font-size: 1rem;
-    color: var(--subheader-color);
+    color: var(--text-color);
     font-weight: 600;
     cursor: pointer;
     margin-top: 1.2rem;
+    transition: 0.4s;
+}
+
+form button:hover {
+    /* box-shadow: none; */
+    box-shadow: 0 0 0.62rem var(--accent-color);
 }

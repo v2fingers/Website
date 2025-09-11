@@ -60,19 +60,28 @@ span {
     display: inline-block;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    padding: 0.7rem 1.5rem;
+    padding: 0.75rem 2rem;
     font-weight: 600;
     color: var(--text-color);
-    /* border: solid 0.1rem var(--accent-color);
-    border-radius: 999px; */
     margin-right: 0.7rem;
     margin-left: 0.7rem;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1rem;
     border-radius: 0.5rem;
-    background-color: var(--accent-color);
+    background: var(--accent-color);
+    /* box-shadow: 0 0 0.62rem var(--accent-color); */
+    box-shadow: none;
+    cursor: pointer;
+    transition: 0.4s;
 }
+
+.btn:hover {
+    /* box-shadow: none; */
+    box-shadow: 0 0 0.62rem var(--accent-color);
+    transition: 0.2s;
+}
+
 
 #btn-container {
     flex-direction: column;
@@ -113,7 +122,7 @@ span {
     flex-direction: column;
     text-align: center;
     padding-top: 8rem;
-    background-image: url("./Images/backgroundimg.jpg");
+    background-image: url("../Images/backgroundimg.jpg");
     background-position: center;
 }
 
