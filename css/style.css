@@ -76,12 +76,6 @@ span {
     transition: 0.4s;
 }
 
-.btn:hover {
-    /* box-shadow: none; */
-    box-shadow: 0 0 0.62rem var(--accent-color);
-    transition: 0.2s;
-}
-
 
 #btn-container {
     flex-direction: column;

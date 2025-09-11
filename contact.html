@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Portfolio</title>
+    <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/effects.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -18,52 +19,64 @@
         </ul>
     </nav>
 
-    <section id="contact-sec">
+    <section id="contact-section">
         <div id="contact-head">
             <p>GET IN TOUCH</p>
             <h1>Lets Create Something Together</h1>
-            <p>If you’d like to work together or just say hi, feel free to reach out.</p>
+            <p>If you would like to work together or just say hi,<br>feel free to reach out.</p>
         </div>
-
-        <div id="container">
-            <form action="#">
-                <div class="input-box">
-                    <div class="input-field field">
-                        <input type="text" class="item" id="name" placeholder="Name*" autocomplete="off">
-                        <div class="error-text">Name is required</div>
+        
+        <div id="contact-container">
+            <!-- Left Side -->
+             <div id="contact-info">
+                <h3>CONTACT INFO</h3>
+                <p>1234 Main St, City, State</p>
+                <p>+1 (234) 567-890</p>
+                <p>me@example.com</p>
+                <p id="tagline">Freelance Web Developer specializing in<br>modern, scalable web apps.</p>
+            </div>
+            
+            <!-- Right Side-->
+             <div class="contact-form">
+                <form action="#">
+                    <div class="input-box">
+                        <div class="input-field field">
+                            <input type="text" class="item" id="name" placeholder="Name*" autocomplete="off">
+                            <div class="error-text">Name is required</div>
+                        </div>
+                        
+                        <div class="input-field field">
+                            <input type="text" class="item" id="email" placeholder="Email*" autocomplete="off">
+                            <div class="error-text">Email is required</div>
+                        </div> 
                     </div>
-                    <div class="input-field field">
-                        <input type="text" class="item" id="email" placeholder="Email*" autocomplete="off">
-                        <div class="error-text">Email is required</div>
-                    </div> 
-                </div>
-
-                <div class="input-box">
-                    <div class="input-field field">
-                        <input type="text" class="item" id="phone" placeholder="Phone*" autocomplete="off">
-                        <div class="error-text">Phone is required</div>
+                    
+                    
+                    <div class="input-box">
+                        <div class="input-field field">
+                            <input type="text" class="item" id="phone" placeholder="Phone*" autocomplete="off">
+                            <div class="error-text">Phone is required</div>
+                        </div>
+                        <div class="input-field field">
+                            <input type="text" class="item" id="subject" placeholder="Subject*" autocomplete="off">
+                            <div class="error-text">Subject is required</div>
+                        </div> 
                     </div>
-                    <div class="input-field field">
-                        <input type="text" class="item" id="subject" placeholder="Subject*" autocomplete="off">
-                        <div class="error-text">Subject is required</div>
-                    </div> 
-                </div>
-
-                 <div class="textarea-field field">
-                    <textarea name="" id="message" cols="30" rows="10" placeholder="Message*" class="item" autocomplete="off"></textarea>
-                    <div class="error-text">Message is required</div>
-                 </div>
-
-                 <button type="submit">Send Message →</button>
-            </form>
+                    
+                    <div class="textarea-field field">
+                        <textarea name="" id="message" cols="30" rows="10" placeholder="Message*" class="item" autocomplete="off"></textarea>
+                        <div class="error-text">Message is required</div>
+                    </div>
+                    
+                    <button type="submit">Send Message →</button>
+                </form>
+            </div>
         </div>
     </section>
 
     <footer>
         <p>© 2025 Bastian Shelton | All Rights Reserved.</p>
-        <a href="#" id="back-to-top">Back To Top ^</a>
     </footer>
 
-    <script src="js/contact.js"></script>
 </body>
 </html>

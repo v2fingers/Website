@@ -65,6 +65,17 @@ footer {
 }
 
 /* Contact Section */
+#contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 69rem;
+  margin: 0 auto;
+  padding: 4.7rem 1.2rem;
+}
+
 #contact {
     flex-direction: column;
     display: flex;
@@ -84,17 +95,37 @@ footer {
     color: var(--subheader-color);
 }
 
+/* Left Side */
+#contact-info {
+  flex: 1;
+  border: 1px solid brown;
+  padding: 1rem;
+  padding-bottom: 5rem;
+}
+
+#tagline {
+    padding-top: 1.5rem;
+}
+
+#contact-info h3 {
+  margin-bottom: 1.2rem;
+}
+
+#contact-info p {
+  margin: 0.7rem 0;
+  font-size: 1.3rem;
+}
+
 /* Contact Form */
-#container {
+.contact-form {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 70vh;
+    min-height: 55vh;
     background-color: var(--bg-color);
-    /* max-width: 35%; */
 }
 
-#container form {
+.contact-form form {
     width: 37.5rem;
     text-align: center;
 }
@@ -151,9 +182,4 @@ form button {
     cursor: pointer;
     margin-top: 1.2rem;
     transition: 0.4s;
-}
-
-form button:hover {
-    /* box-shadow: none; */
-    box-shadow: 0 0 0.62rem var(--accent-color);
 }
