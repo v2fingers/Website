@@ -121,8 +121,9 @@ span {
     flex-direction: column;
     text-align: center;
     padding-top: 8rem;
-    background-image: url("../Website/Images/backgroundimg.jpg");
+    /* background-image: url("/Images/backgroundimg.jpg"); */
     background-position: center;
+    overflow: hidden
 }
 
 
@@ -161,6 +162,7 @@ span {
     align-items: center;
     width: 100%;
     min-height: 100vh;
+    background: var(--bg-color);
 }
 
 #sub {
@@ -220,6 +222,10 @@ span {
 }
 
 /* Projects */
+#projects-sec {
+    background: var(--bg-color);
+}
+
 .projects-container {
     display: flex;
     align-items: center;
@@ -284,4 +290,21 @@ footer {
     align-items: center;
     border-top: solid 1px #222222;
     color: var(--subheader-color);
+    background: var(--bg-color);
+}
+
+
+
+
+/* Video Test */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  background-position: center;
+  /* min-height: 100%; */
+  z-index: -2;
+  max-height: 100vh;
+  object-fit: fill;
 }
