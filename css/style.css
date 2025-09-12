@@ -293,7 +293,9 @@ footer {
     background: var(--bg-color);
 }
 
-
+footer a {
+    color: var(--subheader-color);
+}
 
 
 /* Video Test */
