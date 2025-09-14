@@ -43,16 +43,16 @@
             
             <!-- Right Side-->
              <div class="contact-form">
-                <form action="#">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="571fdcee-aac0-4201-a39c-17f57b14dc30">
+
                     <div class="input-box">
                         <div class="input-field field">
-                            <input type="text" class="item" id="name" placeholder="Name*" autocomplete="off">
-                            <div class="error-text">Name is required</div>
+                            <input type="text" name="name" required class="item" id="name" placeholder="Name*" autocomplete="off">
                         </div>
                         
                         <div class="input-field field">
-                            <input type="text" class="item" id="email" placeholder="Email*" autocomplete="off">
-                            <div class="error-text">Email is required</div>
+                            <input type="email" name="email" required class="item" id="email" placeholder="Email*" autocomplete="off">
                         </div> 
                     </div>
                     
@@ -60,18 +60,18 @@
                     <div class="input-box">
                         <div class="input-field field">
                             <input type="text" class="item" id="phone" placeholder="Phone*" autocomplete="off">
-                            <div class="error-text">Phone is required</div>
                         </div>
                         <div class="input-field field">
-                            <input type="text" class="item" id="subject" placeholder="Subject*" autocomplete="off">
-                            <div class="error-text">Subject is required</div>
+                            <input type="text" name="subject" required class="item" id="subject" placeholder="Subject*" autocomplete="off">
                         </div> 
                     </div>
                     
                     <div class="textarea-field field">
-                        <textarea name="" id="message" cols="30" rows="10" placeholder="Message*" class="item" autocomplete="off"></textarea>
-                        <div class="error-text">Message is required</div>
+                        <textarea name="message" required id="message" cols="30" rows="10" placeholder="Message*" class="item" autocomplete="off"></textarea>
                     </div>
+
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
                     
                     <button type="submit">Send Message →</button>
                 </form>
