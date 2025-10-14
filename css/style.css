@@ -315,3 +315,9 @@ footer a {
   max-height: 100vh;
   object-fit: fill;
 }
+
+
+.unreal {
+    background-color: var(--bg-color);
+}
+
