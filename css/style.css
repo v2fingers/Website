@@ -310,10 +310,16 @@ footer a {
   bottom: 0;
   min-width: 100%;
   background-position: center;
-  /* min-height: 100%; */
   z-index: -2;
   max-height: 100vh;
   object-fit: fill;
+}
+
+#video-container {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
 }
 
 
