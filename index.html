@@ -149,7 +149,7 @@
     </footer>
   <script>
     const faders = document.querySelectorAll('.fade-in-2, .fade-in-1, .fade-in-3');
-    const appearOptions = { threshold: 0.2 };
+    const appearOptions = { threshold: 0.5 };
     const appearOnScroll = new IntersectionObserver(function(entries, observer) {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
