@@ -86,26 +86,8 @@ span {
 }
 
 
-#btn-container {
+.btn-container {
     flex-direction: column;
-}
-
-/* Skills Lists */
-#skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    list-style: none;
-    padding: 0.5rem 0;
-    margin: 0;
-}
-
-#skills li {
-    background-color: var(--accent-hover);
-    color: var(--text-color);
-    padding: 0.8rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
 }
 
 #skills li:hover {
@@ -169,10 +151,11 @@ span {
     background: var(--bg-color);
 }
 
-#sub {
+.sub {
     font-size: 1.5rem;
     padding-bottom: 8rem;
     color: var(--subheader-color);
+    text-align: center;
 }
 
 #about-container {
@@ -191,7 +174,6 @@ span {
 }
 
 #left li {
-    font-size: 2erm;
     padding: 0.2rem 0;
 }
 
@@ -249,7 +231,7 @@ span {
     text-align: center;
 }
 
-#skills {
+.skills {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
@@ -259,7 +241,7 @@ span {
     justify-content: center;
 }
 
-#skills li {
+.skills li {
     background: #150D0D;
     color: var(--text-color);
     padding: 0.8rem 1rem;
