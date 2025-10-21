@@ -1,0 +1,32 @@
+
+.fade-in-1 {
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.fade-in-1.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-2 {
+  opacity: 0;
+  transform: translateX(-1rem);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.fade-in-2.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-in-3 {
+  opacity: 0;
+  transform: translateX(1rem);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.fade-in-3.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
