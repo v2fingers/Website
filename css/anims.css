@@ -48,3 +48,12 @@ nav a::after {
 nav a:hover::after {
   width: 100%;
 }
+
+
+/* Button Hover Light-up */
+
+.btn:hover {
+    box-shadow: 0 0 0.62rem var(--accent-color);
+    transition: 0.2s;
+}
+
