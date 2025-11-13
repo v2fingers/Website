@@ -30,12 +30,7 @@ body {
     background: var(--bg-color);
 }
 
-/* Texts */
-h1, h2, h3 {
-  font-family: var(--font-heading);
-  color: var(--text-color);
-}
-
+/* Icons */
 .fa-solid {
     color: var(--accent-color);
     padding-right: 0.8rem;
@@ -52,6 +47,11 @@ h1, h2, h3 {
     padding-top: 1rem;
 }
 
+/* Texts */
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  color: var(--text-color);
+}
 
 h3 {
     font-size: 1.6rem;
@@ -95,29 +95,23 @@ footer {
   padding: 4.7rem 1.2rem;
 }
 
-#contact {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    min-height: 100vh;
-}
-
+/* Heading of contact page styling */
 #contact-head {
     text-align: center;
     padding-top: 8rem;
 }
 
+/* Heading p */
 #contact-head p {
     font-size: 1.3rem;
     padding: 1rem;
     color: var(--subheader-color);
 }
 
-/* Left Side */
+/* Contact Main Section */
+/* Left Side contact info */
 #contact-info {
   flex: 1;
-  /* border: 1px solid brown; */
   padding: 2rem;
 }
 
@@ -129,7 +123,8 @@ footer {
   margin: 1.7rem 0;
   font-size: 1.3rem;
 }
-/* Contact Form */
+
+/* Right side Contact Form */
 .contact-form {
     min-height: 55vh;
     background-color: var(--bg-color);
@@ -189,6 +184,7 @@ textarea {
     display: none;
 }
 
+/* Submit Button */
 .btn{
     display: inline-block;
     margin-top: 1rem;

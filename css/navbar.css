@@ -36,6 +36,7 @@
     /* border: solid 1px brown; DEBUG*/
 }
 
+/* Navbar links formating */
 #navbar a {
     color: var(--text-color);
     text-decoration: none;

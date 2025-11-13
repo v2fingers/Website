@@ -4,6 +4,7 @@
 
 /* Custom Cursor */
 
+/* Outer Ring Code */
 .cursor {
   width: 50px;
   height: 50px;
@@ -18,7 +19,7 @@
   z-index: 10;
 }
 
-
+/* Inner dot */
 .cursor2 {
   width: 20px;
   height: 20px;
@@ -32,6 +33,7 @@
   z-index: 10;
 }
 
+/* Hover animation code */
 .hover {
   background-color: #361918;
   opacity: 0.9;

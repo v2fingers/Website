@@ -1,4 +1,7 @@
 
+/* Fade in aimnations */
+
+/* Go up animaiton */
 .fade-in-1 {
   opacity: 0;
   transform: translateY(1rem);
@@ -9,6 +12,7 @@
   transform: translateY(0);
 }
 
+/* Come in from left animation */
 .fade-in-2 {
   opacity: 0;
   transform: translateX(-1rem);
@@ -19,6 +23,7 @@
   transform: translateX(0);
 }
 
+/* Come in from right animation */
 .fade-in-3 {
   opacity: 0;
   transform: translateX(1rem);
@@ -29,12 +34,14 @@
   transform: translateX(0);
 }
 
+/* Nav link underline animation */
 nav a {
   text-decoration: none;
   color: var(--text-color);
   font-weight: 500;
   position: relative;
 }
+
 nav a::after {
   content: '';
   position: absolute;
@@ -45,13 +52,13 @@ nav a::after {
   background: var(--accent-color);
   transition: width 0.3s ease;
 }
+
 nav a:hover::after {
   width: 100%;
 }
 
 
-/* Button Hover Light-up */
-
+/* Button Hover Light-up animation */
 .btn:hover {
     box-shadow: 0 0 0.62rem var(--accent-color);
     transition: 0.2s;

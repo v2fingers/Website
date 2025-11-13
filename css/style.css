@@ -33,6 +33,7 @@ body {
 /* ITEM STYLING */
 /* Texts */
 
+/* Icons */
 .fa-solid {
     color: var(--accent-color);
     padding-right: 0.8rem;
@@ -42,6 +43,7 @@ body {
     padding-left: 0;
 }
 
+/* All heading formating */
 h1, h2, h3 {
   font-family: var(--font-heading);
   color: var(--text-color);
@@ -81,7 +83,6 @@ span {
     font-size: 1rem;
     border-radius: 0.5rem;
     background: var(--accent-color);
-    /* box-shadow: 0 0 0.62rem var(--accent-color); */
     box-shadow: none;
     transition: 0.4s;
 }
@@ -91,14 +92,9 @@ span {
     flex-direction: column;
 }
 
-#skills li:hover {
-    background-color: var(--accent-hover); 
-}
-
 /* WEBSITE SECTIONS */
 
 /* Hero Section */
-
 #hero {
     display: flex;
     align-items: center;
@@ -108,18 +104,37 @@ span {
     flex-direction: column;
     text-align: center;
     padding-top: 8rem;
-    /* background-image: url("/Images/backgroundimg.jpg"); */
     background-position: center;
     overflow: hidden
 }
 
+/* Hero video formatting */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  background-position: center;
+  z-index: -2;
+  max-height: 100vh;
+  object-fit: fill;
+}
 
+#video-container {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+/* Paragraph font for hero section */
 #hero p {
     font-size: 1.3rem;
     padding: 1rem;
     color: var(--subheader-color);
 }
 
+/* Scroll down icon */
 .scroll-icon {
     display: flex;
     flex-direction: column;
@@ -135,6 +150,7 @@ span {
     padding-bottom: 0.5rem;
 }
 
+/* Vertcal Line */
 .scroll-icon .line {
     width: 0.05rem;
     height: 3rem;
@@ -152,6 +168,7 @@ span {
     background: var(--bg-color);
 }
 
+/* Subheading styling */
 .sub {
     font-size: 1.5rem;
     padding-bottom: 8rem;
@@ -159,12 +176,16 @@ span {
     text-align: center;
 }
 
+/* About Section */
+
+/* Content Container */
 #about-container {
     display: flex;
     gap: 2rem;
     justify-content: center;
 }
 
+/* Right side base formating */
 #right {
     background: var(--bg-color);
     color: var(--text-color);
@@ -174,6 +195,11 @@ span {
     font-size: 1.3rem;
 }
 
+#right p {
+    padding-bottom: 2rem;
+}
+
+/* Left List & Heading styling */
 #left li {
     padding: 0.2rem 0;
 }
@@ -183,6 +209,7 @@ span {
     font-weight: 400;
 }
 
+/* List of stuff about me styling */
 #about-list {
     color: var(--subheader-color);
     font-size: 1.2rem;
@@ -200,21 +227,21 @@ span {
     margin-left: 0;
 }
 
+/* Devider vertical line */
 #divider {
     width: 0.3rem;
     background: var(--text-color);
 }
 
-#right p {
-    padding-bottom: 2rem;
-}
-
 /* Projects */
+
+/* Base code for section */
 #projects-sec {
     background: var(--bg-color);
     align-items: center;
 }
 
+/* Project widget container */
 .projects-container {
     display: flex;
     align-items: center;
@@ -223,6 +250,7 @@ span {
     min-height: 10vh;
 }
 
+/* Project thumbnail img */
 .project-img {
     max-width: 100%;
     margin: auto;
@@ -230,6 +258,7 @@ span {
     border-radius: 0.5rem;
 }
 
+/* Project information */
 .text-box {
     background-color: #0A0A0A;
     /* max-width: 80%; */
@@ -239,6 +268,15 @@ span {
     max-width: 40rem;
 }
 
+.text-box h2 {
+    padding: 1rem;
+}
+
+.text-box p {
+    padding-bottom: 0.5rem;
+}
+
+/* Skills list/buttons */
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -257,13 +295,7 @@ span {
     font-size: 0.9rem;
 }
 
-.text-box h2 {
-    padding: 1rem;
-}
-
-.text-box p {
-    padding-bottom: 0.5rem;
-}
+/* Footer main formating */
 
 footer {
     text-align: center;
@@ -278,25 +310,5 @@ footer {
 
 footer a {
     color: var(--subheader-color);
-}
-
-
-/* Video Test */
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  background-position: center;
-  z-index: -2;
-  max-height: 100vh;
-  object-fit: fill;
-}
-
-#video-container {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    z-index: -2;
 }
     

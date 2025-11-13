@@ -30,6 +30,7 @@ body {
     background: var(--bg-color);
 }
 
+/* Main text formating */
 h1, h2 {
   font-family: var(--font-heading);
   color: var(--text-color);
@@ -55,6 +56,7 @@ P {
     padding-bottom: 4rem;
 }
 
+/* 404 content conatiner */
 #container {
     text-align: center;
     display: flex;
@@ -65,6 +67,7 @@ P {
     flex-direction: column;
 }
 
+/* Go Home Button */
 .btn{
     display: inline-block;
     margin-top: 1rem;
